@@ -17,3 +17,63 @@ Uma API teste em Go utilizando Gin Framework, containerizada com Docker e implan
 - **Minikube** ([Instalação](https://minikube.sigs.k8s.io/docs/start/))
 - **kubectl** ([Guia](https://kubernetes.io/docs/tasks/tools/))
 - **k6** (Opcional para testes de carga: `choco install k6`)
+
+---
+
+## 🛠️ Como Usar
+### 🦫 Go
+#### 1. Clone o Repositório
+```bash
+git clone https://github.com/JoaoPedro27/api-escalavel-go.git
+cd api-escalavel-go
+```
+#### 2. Instale as Dependências
+```bash
+go mod download
+```
+#### 3. Execute Localmente
+```bash
+go run main.go
+```
+#### Teste a API:
+```bash
+http://localhost:8080/health
+http://localhost:8080/hello
+```
+### 🐳 Docker
+#### 1. Construa a Imagem
+```bash
+docker build -t go-api:latest .
+```
+#### 2. Execute o Container
+```bash
+docker run -p 8080:8080 go-api
+```
+### ☸️ Implantação no Kubernetes
+#### 1. Inicie o Cluster
+```bash
+minikube start --driver=docker
+```
+#### 2. Carregue a Imagem no Minikube
+```bash
+minikube image load go-api:latest
+```
+#### 3. Implante a Aplicação
+```bash
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
+#### 4. Acesse a API
+```bash
+minikube service go-api-service --url
+```
+### 📊 Teste de Carga com k6
+#### Execute o Teste (100 usuários por 1 minuto)
+```bash
+k6 run load-test.js
+```
+#### Exemplo de Resultados:
+```bash
+http_req_duration........: avg=12.27ms min=503.6µs med=1.81ms max=87.79ms
+http_req_failed..........: 0.00% ✓ 0 ✗ 5976
+```
