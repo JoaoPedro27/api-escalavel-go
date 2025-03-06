@@ -77,3 +77,5 @@ k6 run load-test.js
 http_req_duration........: avg=12.27ms min=503.6µs med=1.81ms max=87.79ms
 http_req_failed..........: 0.00% ✓ 0 ✗ 5976
 ```
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-326CE5?logo=Linkedin)](https://www.linkedin.com/in/joaopmroberto/)
