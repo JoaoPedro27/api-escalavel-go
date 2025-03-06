@@ -1,4 +1,5 @@
 # 🚀 API Escalável em Go com Kubernetes
+![RESPOSTA](https://github.com/user-attachments/assets/e6168ad7-991a-4e83-a4b7-a565f0fced04)
 
 [![Go Version](https://img.shields.io/badge/Go-1.24+-00ADD8?logo=go)](https://golang.org/)
 
