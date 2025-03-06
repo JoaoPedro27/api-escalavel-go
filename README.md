@@ -1,8 +1,11 @@
 # 🚀 API Escalável em Go com Kubernetes
 
 [![Go Version](https://img.shields.io/badge/Go-1.24+-00ADD8?logo=go)](https://golang.org/)
+
 [![Docker](https://img.shields.io/badge/Docker-24.0+-2496ED?logo=docker)](https://www.docker.com/)
+
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-1.29+-326CE5?logo=kubernetes)](https://kubernetes.io/)
+
 
 Uma API moderna em Go utilizando Gin Framework, containerizada com Docker e implantada em Kubernetes para alta escalabilidade.
 
