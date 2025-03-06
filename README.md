@@ -6,11 +6,8 @@
 
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-1.29+-326CE5?logo=kubernetes)](https://kubernetes.io/)
 
+Uma API teste em Go utilizando Gin Framework, containerizada com Docker e implantada em Kubernetes para alta escalabilidade.
 
-Uma API moderna em Go utilizando Gin Framework, containerizada com Docker e implantada em Kubernetes para alta escalabilidade.
-
-![Diagrama de Arquitetura](https://i.imgur.com/mX9t3dD.png)  
-*(Diagrama ilustrativo: Load Balancer, Kubernetes Cluster e Pods)*
 
 ## 📋 Pré-requisitos
 
